@@ -16,6 +16,8 @@ Aplicación web desarrollada en **Streamlit** diseñada para procesar y traducir
   - Preserva citas bibliográficas (`[1]`, `(Smith et al., 2021)`).
   - Preserva fórmulas y código LaTeX (`$E=mc^2$`).
   - Adaptación por disciplina científica (IA/Computación, Medicina, Física, Ingeniería, etc.) y glosario personalizado.
+- **Modo Oscuro y Claro (Dark/Light Mode)**: Interfaz personalizable con paleta visual moderna y soporte para modo nocturno o diurno en tiempo real.
+- **Soporte Bilingüe (Español / Inglés)**: Selector dinámico en la barra lateral para alternar toda la interfaz de usuario entre español e inglés.
 - **Cola de Procesamiento en Lote**:
   - Barra de progreso global con indicador de archivo y bloque en tiempo real.
   - Control de pausas y reintentos para respetar límites de cuota (rate limits de Gemini).
@@ -50,3 +52,16 @@ Obtén tu clave gratuita en [Google AI Studio](https://aistudio.google.com/). Pu
 ```bash
 streamlit run app.py
 ```
+
+---
+
+## 🪟 Crear y Ejecutar en Windows
+
+### Opción A: Compilar el Ejecutable `.exe` (PyInstaller)
+1. Haz doble clic en [`build_exe.bat`](file:///home/lenzhit/unt/proyecto-investigacion/build_exe.bat) (o ejecútalo desde CMD/PowerShell).
+2. El script configurará automáticamente las dependencias y compilará la aplicación.
+3. El archivo ejecutable independiente quedará generado en la carpeta `dist/TraductorPapers.exe`.
+
+### Opción B: Ejecución Directa Portable (Sin compilar)
+- Haz doble clic en [`run_portable.bat`](file:///home/lenzhit/unt/proyecto-investigacion/run_portable.bat) para iniciar la app y abrir el navegador web automáticamente.
+
